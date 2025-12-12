@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Arrear Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkLogin()">
+
+<div class="container">
+
+    <h2>Arrear Result Sheet</h2>
+    <h3>Name: LAKSHYA NEHRA</h3>
+    <h3>Reg No: 21BCE3313</h3>
+
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>Total</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr><td>BMAT202L</td><td>Probability and Statistics</td><td>22</td><td>F</td></tr>
+        <tr><td>BMAT201L</td><td>Complex Variables and Linear Algebra</td><td>15</td><td>F</td></tr>
+        <tr><td>BPHY101L</td><td>Engineering Physics</td><td>27</td><td>F</td></tr>
+        <tr><td>BMAT205L</td><td>Discrete Mathematics and Graph Theory</td><td>32</td><td>F</td></tr>
+        <tr><td>BECE102L</td><td>Digital Systems Design</td><td>35</td><td>F</td></tr>
+        <tr><td>BCSE102L</td><td>Structured & OOP</td><td>17</td><td>F</td></tr>
+        <tr><td>BCSE305L</td><td>Embedded Systems</td><td>42</td><td>F</td></tr>
+
+    </table>
+
+</div>
+
+<script>
+function checkLogin() {
+    if (localStorage.getItem("loggedin") !== "yes") {
+        alert("Not Logged In");
+        window.location.href = "login.html";
+    }
+}
+</script>
+
+</body>
+</html>
