@@ -1,46 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Arrear Results</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>VIT Arrear Results</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #ffffff;
+    }
+
+    .header {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .student-info {
+        font-size: 16px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    table, th, td {
+        border: 1px solid #000000;
+    }
+
+    th {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .grand-total {
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+</style>
 </head>
 
-<body onload="checkLogin()">
+<body>
 
-<div class="container">
-
-    <h2>Arrear Result Sheet</h2>
-    <h3>Name: LAKSHYA NEHRA</h3>
-    <h3>Reg No: 21BCE3313</h3>
-
-    <table>
-        <tr>
-            <th>Course Code</th>
-            <th>Course Title</th>
-            <th>Total</th>
-            <th>Grade</th>
-        </tr>
-
-        <tr><td>BMAT202L</td><td>Probability and Statistics</td><td>22</td><td>F</td></tr>
-        <tr><td>BMAT201L</td><td>Complex Variables and Linear Algebra</td><td>15</td><td>F</td></tr>
-        <tr><td>BPHY101L</td><td>Engineering Physics</td><td>27</td><td>F</td></tr>
-        <tr><td>BMAT205L</td><td>Discrete Mathematics and Graph Theory</td><td>32</td><td>F</td></tr>
-        <tr><td>BECE102L</td><td>Digital Systems Design</td><td>35</td><td>F</td></tr>
-        <tr><td>BCSE102L</td><td>Structured & OOP</td><td>17</td><td>F</td></tr>
-        <tr><td>BCSE305L</td><td>Embedded Systems</td><td>42</td><td>F</td></tr>
-
-    </table>
-
+<div class="header">
+    Vellore Institute of Technology
 </div>
 
-<script>
-function checkLogin() {
-    if (localStorage.getItem("loggedin") !== "yes") {
-        alert("Not Logged In");
-        window.location.href = "login.html";
-    }
-}
-</script>
+<div class="student-info">
+    <strong>Name:</strong> LAKSHYA NEHRA<br>
+    <strong>Registration No:</strong> 21BCE3313
+</div>
+
+<table>
+    <tr>
+        <th>Course Code</th>
+        <th>Course Title</th>
+        <th>Course Type</th>
+        <th>Grade</th>
+        <th>Credits</th>
+    </tr>
+
+    <tr>
+        <td>CSE2001</td>
+        <td>Data Structures & Algorithms</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>CSE3002</td>
+        <td>Computer Networks</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>MATH2011</td>
+        <td>Probability & Statistics</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>CSE4001</td>
+        <td>Operating Systems</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>CSE2004</td>
+        <td>Theory of Computation</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>CSE3003</td>
+        <td>DBMS</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>MAT1011</td>
+        <td>Calculus for Engineers</td>
+        <td>ETH</td>
+        <td>F</td>
+        <td>4</td>
+    </tr>
+
+    <tr class="grand-total">
+        <td colspan="4" style="text-align:right;">Grand Total Credits</td>
+        <td>24</td>
+    </tr>
+</table>
 
 </body>
 </html>
