@@ -1,60 +1,71 @@
+/* Full page background */
 body {
-    background: #e9eef7;
-    font-family: Arial;
+    background-color: rgb(240, 240, 240); /* light grey */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    width: 50%;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #aaa;
-}
-
-.input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 6px;
-    border: 1px solid #777;
-}
-
-.btn {
-    display: block;
-    margin-top: 20px;
-    padding: 12px;
-    background: #0056d6;
+/* VTOP header area */
+.header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #002D62;  /* VIT Blue */
     color: white;
-    text-align: center;
-    border-radius: 6px;
-    text-decoration: none;
-    cursor: pointer;
+    border-bottom: 4px solid #0056a3;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 25px;
-}
-
-table th, table td {
-    border: 1px solid #444;
-    padding: 10px;
-    text-align: center;
-}
-/* Bigger VIT logo */
+/* Big centered logo */
 .vit-logo {
-    width: 150px;     /* increase size */
-    display: block;
-    margin: 0 auto 15px auto;  /* center the logo */
+    width: 140px;
+    margin-bottom: 8px;
 }
 
-/* Grey border around screenshot */
+/* Main title */
+.title {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* White info box like VTOP */
+.info-box {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto 10px auto;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    font-size: 18px;
+}
+
+/* Result screenshot block */
+.result-container {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 10px auto 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* Screenshot image */
 .result-img {
     width: 100%;
-    border: 3px solid #ccc;    /* grey border */
-    border-radius: 8px;        /* smooth corners */
-    margin-top: 20px;
+    border: 3px solid #ccc;
+    border-radius: 6px;
 }
 
+/* Optional: link/button styles if needed later */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056d6;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+}
