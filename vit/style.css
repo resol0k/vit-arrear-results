@@ -1,62 +1,59 @@
-/* Light grey background */
 body {
-    background-color: rgb(240, 240, 240);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: #e9eef7;
+    font-family: Arial;
 }
 
-/* Info box centered */
-.info-box {
+.container {
+    width: 50%;
+    margin: 40px auto;
     background: white;
-    width: 80%;
-    max-width: 900px;
-    margin: 40px auto 10px auto;
-    padding: 20px 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.15);
-    font-size: 18px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
 }
 
-/* Result screenshot container */
-.result-container {
-    background: white;
-    width: 80%;
-    max-width: 900px;
-    margin: 10px auto 40px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #777;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    background: #0056d6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
     text-align: center;
 }
-
-/* Screenshot image */
-.result-img {
-    width: 100%;
-    border: 3px solid #ccc;
-    border-radius: 6px;
-}
-/* Center only the result page content */
-.info, .result-img {
+/* Bigger VIT logo */
+.vit-logo {
+    width: 150px;     /* increase size */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 15px auto;  /* center the logo */
 }
 
-/* Make screenshot prettier (same as before) */
+/* Grey border around screenshot */
 .result-img {
     width: 100%;
-    max-width: 900px;
-    border: 3px solid #ccc;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Ensure info text stays clean */
-.info {
-    font-size: 18px;
-    font-weight: bold;
-    width: 80%;
-    max-width: 900px;
+    border: 3px solid #ccc;    /* grey border */
+    border-radius: 8px;        /* smooth corners */
     margin-top: 20px;
 }
