@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrear Results - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>VTOP Login</h2>
+
+        <input id="userid" placeholder="User ID" class="input">
+        <input id="password" placeholder="Password" type="password" class="input">
+
+        <button class="btn" onclick="login()">Submit</button>
+    </div>
+
+<script>
+function login() {
+    let id = document.getElementById("userid").value;
+    let pass = document.getElementById("password").value;
+
+    if (id === "21BCE3313" && pass === "Vtop@1234") {
+        localStorage.setItem("loggedin", "yes");
+        window.location.href = "result.html";
+    } else {
+        alert("Invalid Credentials");
+    }
+}
+</script>
+</body>
+</html>
