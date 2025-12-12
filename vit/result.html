@@ -3,55 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <title>VIT Arrear Results</title>
+<link rel="stylesheet" href="style.css">
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: white;
-        margin: 0;
-        padding: 20px;
+    /* Page-specific styling for result page */
+    .result-container {
+        max-width: 1000px;
+        margin: 30px auto;
+        background: #f5f5f5;       /* soft grey background */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.15);
     }
 
     .header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
-    .header img {
-        width: 90px;
-        margin-bottom: 10px;
+    .header h2 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: bold;
     }
 
     .info {
-        text-align: left;
-        width: 100%;
-        margin-bottom: 15px;
         font-size: 18px;
         font-weight: bold;
+        line-height: 1.6;
+        margin-bottom: 15px;
     }
 
     .result-img {
         width: 100%;
-        max-width: 900px;
-        display: block;
-        margin: auto;
+        border-radius: 6px;
         border: 1px solid #ccc;
     }
 </style>
+
 </head>
 <body>
-<div class="header">   
-    <h2>Regular Arrear</h2>
+
+<div class="result-container">
+    <div class="header">
+        <h2>Regular Arrear</h2>
+    </div>
+
+    <div class="info">
+        NAME: LAKSHYA NEHRA<br>
+        REG NUMBER: 21BCE3313
+    </div>
+
+    <!-- The screenshot -->
+    <img class="result-img" src="result.jpeg">
 </div>
-<div class="info">
-    NAME: LAKSHYA NEHRA<br>
-    REG NUMBER: 21BCE3313
-</div>
-<!-- Screenshot displayed exactly as you requested -->
-<img class="result-img" src="result.jpeg">
 
 </body>
 </html>
